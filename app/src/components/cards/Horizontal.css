@@ -1,0 +1,14 @@
+.h-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  height: 10rem;
+  width: 100%;
+}
+
+.h-cover {
+  border-radius: 3px 0 0 3px;
+  width: 18rem;
+  height: 100%;
+}

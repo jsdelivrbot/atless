@@ -1,0 +1,26 @@
+#menu {
+  z-index: 5;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  /*border: 1px solid white;*/
+  display: flex;
+  width: 45px;
+  height: 30px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.bar {
+  height: 6px;
+  width: 100%;
+  background-color: white;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.bot {
+  width: 70%;
+  margin-right: 30%;
+}

@@ -1,0 +1,33 @@
+.card {
+  margin-bottom: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border-radius: 3px;
+}
+
+.card-describe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 13rem;
+}
+
+.card-title {
+  color: white;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-size: 30px;
+  margin: 0;
+  width: 80%
+
+}
+
+.card-cover {
+  background-position: center;
+  -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}

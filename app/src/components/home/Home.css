@@ -1,0 +1,16 @@
+.home {
+  display: flex;
+  justify-content: center;
+}
+
+.home-feed {
+  /*border: 1px solid red;*/
+  width: 90%;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  /*flex-direction: column;*/
+  justify-content: center;
+  align-items: center;
+  top: 60px;
+}
