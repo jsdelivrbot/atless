@@ -6,8 +6,6 @@ import { renderToString } from 'react-dom/server';
 import { StaticRouter } from 'react-router-dom';
 import fs from 'fs';
 import App from './src/App';
-//import Home from './src/Home';
-import Article from './src/Article';
 // import fetch from 'isomorphic-fetch';
 
 const html = fs.readFileSync(__dirname + '/dist/index.html', 'utf8');
