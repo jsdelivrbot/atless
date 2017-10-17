@@ -1,18 +1,15 @@
 import React from 'react';
-
-let lis = [];
-function addLi() {
-  lis.push('+');
-}
+import Home from './Home';
+import Article from './Article';
+import { Switch, Route } from 'react-router-dom';
 
 function App() {
-
   return (
     <div>
-      <h1>Im the App</h1>
-      <button onClick={() => {
-        alert('This is reactive!!!')
-      }}>Is this reactive?</button>
+      <Switch>
+        <Route path='/' exact component={Home}/>
+        <Route path='/blog/:id' component={Article}/>
+      </Switch>
     </div>
   )
 }

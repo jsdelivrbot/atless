@@ -6,6 +6,12 @@ module.exports = {
     path: path.resolve('dist'),
     filename: 'bundle.js'
   },
+  devServer: {
+    contentBase: path.join(__dirname, "dist"),
+    compress: true,
+    port: 9000,
+    open: true
+  },
   module: {
     loaders: [
       {
