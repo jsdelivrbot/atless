@@ -6,7 +6,26 @@ import { renderToString } from 'react-dom/server';
 import { StaticRouter } from 'react-router-dom';
 import fs from 'fs';
 import App from './src/App';
-// import fetch from 'isomorphic-fetch';
+import mongoose from 'mongoose';
+import fetch from 'isomorphic-fetch';
+
+const URI = 'mongodb://heroku_f51dh265:prtqmer3p1hvmidak0h6mlumt0@ds121665.mlab.com:21665/heroku_f51dh265';
+// mongoose
+mongoose.connect(URI, {
+  useMongoClient: true
+});
+
+var Schema = mongoose.Schema,
+    ObjectId = Schema.ObjectId;
+
+var BlogPost = new Schema({
+    title     : String,
+    subtitle  : String,
+    body      : String,
+    date      : Date
+});
+
+var Post = mongoose.model('Post', BlogPost);
 
 const html = fs.readFileSync(__dirname + '/dist/index.html', 'utf8');
 
